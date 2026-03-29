@@ -88,12 +88,12 @@ The system includes a whitelist-based validation mechanism that verifies emergen
 
 ---
 
-## Authors
+## Collaborators
 
-| Name                   | Title     |
-| ---------------------- | --------- |
-| Rutuja Bhagat          | Student   |
-| Abhimanyu Singh        | Student   |
-| Sahil Kalotra          | Student   |
-| Bhoomika R P           | Student   |
-| Prafullata K. Auradkar | Professor |
+| Name                   | Role       |
+| ---------------------- | ---------- |
+| Rutuja Bhagat          | Developer  |
+| Abhimanyu Singh        | Developer  |
+| Sahil Kalotra          | Developer  |
+| Bhoomika R P           | Developer  |
+| Prafullata K. Auradkar | Supervisor |
