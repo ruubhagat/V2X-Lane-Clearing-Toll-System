@@ -106,11 +106,13 @@ This work is submitted to the ICITS 2026 conference and focuses on integrating m
 
 ## Authors
 
-Rutuja Bhagat
-Abhimanyu Singh
-Sahil Kalotra
-Bhoomika R P
-Prof. Prafullata K. Auradkar
+| Name                          | Title      | Research Area                          |
+|-------------------------------|-----------|----------------------------------------|
+| Rutuja Bhagat                | Student    | V2X Communications, Vehicular Networks |
+| Abhimanyu Singh              | Student    | IEEE 802.11p, OMNeT++ Simulation       |
+| Sahil Kalotra                | Student    | Network Security, VANET                |
+| Bhoomika R P                 | Student    | Intelligent Transportation Systems     |
+| Prafullata K. Auradkar       | Professor  | Wireless Networks, IoT, Edge Computing |
 
 ---
 
