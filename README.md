@@ -6,11 +6,11 @@ This repository presents a V2X-based intelligent traffic management system that 
 
 ## Overview
 
-Urban traffic congestion delays emergency response due to the lack of coordinated lane clearance. At the same time, toll plazas introduce additional delays. This work addresses both challenges using a unified RSU-based approach that:
+Urban traffic congestion delays emergency response due to the lack of coordinated lane clearance. Conventional toll systems further increase delays. This work addresses both challenges using a unified RSU-based approach that:
 
 * Detects emergency vehicles using Basic Safety Messages (BSM)
 * Issues real-time lane change commands via TraCI
-* Processes toll transactions simultaneously
+* Processes toll transactions within the same system
 * Prevents spoofing through whitelist validation
 
 ---
@@ -27,19 +27,9 @@ Urban traffic congestion delays emergency response due to the lack of coordinate
 
 ## System Architecture
 
-The system consists of three layers:
+![System Architecture](figures/system_architecture.png)
 
-1. Vehicle Layer
-   Emergency vehicles broadcast PSID = 1 BSM messages. Civilian vehicles receive and act on RSU instructions.
-
-2. RSU Layer
-   Performs emergency detection, lane management, toll computation, and security validation.
-
-3. Simulation Layer
-
-   * SUMO for traffic simulation
-   * OMNeT++ and Veins for network simulation
-   * TraCI for real-time interaction
+The architecture illustrates the interaction between vehicles, RSU, and simulation layers using V2X communication.
 
 ---
 
@@ -52,6 +42,18 @@ The system consists of three layers:
 | Detection Latency | 26–177 ms | 5 ms         |
 | Toll Accuracy     | Variable  | 100%         |
 | Packet Loss       | —         | 0%           |
+
+---
+
+## Simulation Snapshots
+
+### Lane Clearing
+
+![Lane Clearing](figures/lane_clearing_simulation.png)
+
+### Virtual Toll Gantry
+
+![Toll Gantry](figures/toll_gantry_simulation.png)
 
 ---
 
@@ -80,7 +82,7 @@ veinss/
 2. Open the project in OMNeT++ IDE:
 
    * Import the project from the repository
-   * Ensure Veins framework is correctly linked
+   * Ensure Veins framework is correctly configured
 
 3. Run the simulation:
 
