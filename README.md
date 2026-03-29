@@ -27,7 +27,7 @@ Urban traffic congestion delays emergency response due to the lack of coordinate
 
 ## System Architecture
 
-![System Architecture](figures/system_architecture.png)
+![System Architecture](figures/System_Architecture.png)
 
 The architecture illustrates the interaction between vehicles, RSU, and simulation layers using V2X communication.
 
@@ -49,11 +49,11 @@ The architecture illustrates the interaction between vehicles, RSU, and simulati
 
 ### Lane Clearing
 
-![Lane Clearing](figures/lane_clearing_simulation.png)
+![Lane Clearing](figures/Lane_Clearing_Simulation.png)
 
 ### Virtual Toll Gantry
 
-![Toll Gantry](figures/toll_gantry_simulation.png)
+![Toll Gantry](figures/Toll_Gantry_Simulation.png)
 
 ---
 
