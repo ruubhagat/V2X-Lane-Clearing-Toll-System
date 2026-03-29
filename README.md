@@ -50,10 +50,12 @@ The architecture illustrates the interaction between vehicles, RSU, and simulati
 ### Lane Clearing
 
 ![Lane Clearing](figures/Lane_Clearing_Simulation.png)
+Vehicles dynamically change lanes in response to RSU commands, creating a clear path for the emergency vehicle.
 
 ### Virtual Toll Gantry
 
 ![Toll Gantry](figures/Toll_Gantry_Simulation.png)
+A virtual toll gantry enables contactless toll collection by processing vehicle data through RSU-based V2X communication.
 
 ---
 
