@@ -1,4 +1,4 @@
-# Unified V2X Framework for Emergency Lane Clearing and Contactless Toll Collection
+# Unified V2X Framework for Emergency Lane Clearing and Contactless Toll Collection 🚗
 
 This repository presents a V2X-based intelligent traffic management system that integrates emergency vehicle lane clearing and contactless toll collection within a single roadside unit (RSU). The system is implemented using SUMO, OMNeT++, and Veins, and leverages IEEE 802.11p (DSRC) communication.
 
@@ -43,7 +43,7 @@ The system consists of three layers:
 
 ---
 
-## Results Summary
+## Results Summary 📊
 
 | Metric            | Baseline  | Proposed V2X |
 | ----------------- | --------- | ------------ |
@@ -59,17 +59,17 @@ The system consists of three layers:
 
 ```bash
 veinss/
-├── sumo/              # Road network and traffic configurations
-├── omnet/             # OMNeT++ simulation files
-├── veins/             # RSU logic and V2X modules
-├── results/           # Output data and graphs
-├── figures/           # Images used in the paper
-├── paper/             # Final paper PDF
+├── sumo/              
+├── omnet/             
+├── veins/             
+├── results/           
+├── figures/           
+├── paper/             
 ```
 
 ---
 
-## Setup and Execution
+## Setup and Execution ⚙️
 
 1. Install the following dependencies:
 
@@ -77,18 +77,18 @@ veinss/
    * OMNeT++
    * Veins
 
-2. Clone the repository:
+2. Open the project in OMNeT++ IDE:
 
-```bash
-git clone https://github.com/ruubhagat/V2X-Lane-Clearing-Toll-System.git
-cd V2X-Lane-Clearing-Toll-System
-```
+   * Import the project from the repository
+   * Ensure Veins framework is correctly linked
 
 3. Run the simulation:
 
-```bash
-./run.sh
-```
+   * Open the `.ini` configuration file
+   * Select the desired scenario
+   * Click **Run** in OMNeT++
+
+SUMO will automatically connect via TraCI during execution.
 
 ---
 
@@ -98,25 +98,12 @@ The system includes a whitelist-based validation mechanism that verifies emergen
 
 ---
 
-## Research Context
-
-This work is submitted to the ICITS 2026 conference and focuses on integrating mobility control and tolling within a unified V2X framework.
-
----
-
 ## Authors
 
-| Name                          | Title      | Research Area                          |
-|-------------------------------|-----------|----------------------------------------|
-| Rutuja Bhagat                | Student    | V2X Communications, Vehicular Networks |
-| Abhimanyu Singh              | Student    | IEEE 802.11p, OMNeT++ Simulation       |
-| Sahil Kalotra                | Student    | Network Security, VANET                |
-| Bhoomika R P                 | Student    | Intelligent Transportation Systems     |
-| Prafullata K. Auradkar       | Professor  | Wireless Networks, IoT, Edge Computing |
-
----
-
-## Code Availability
-
-The implementation and simulation setup are available at:
-https://github.com/ruubhagat/V2X-Lane-Clearing-Toll-System
+| Name                   | Title     |
+| ---------------------- | --------- |
+| Rutuja Bhagat          | Student   |
+| Abhimanyu Singh        | Student   |
+| Sahil Kalotra          | Student   |
+| Bhoomika R P           | Student   |
+| Prafullata K. Auradkar | Professor |
