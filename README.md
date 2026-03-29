@@ -57,20 +57,6 @@ The architecture illustrates the interaction between vehicles, RSU, and simulati
 
 ---
 
-## Repository Structure
-
-```bash
-veinss/
-├── sumo/              
-├── omnet/             
-├── veins/             
-├── results/           
-├── figures/           
-├── paper/             
-```
-
----
-
 ## Setup and Execution ⚙️
 
 1. Install the following dependencies:
