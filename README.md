@@ -27,7 +27,7 @@ Urban traffic congestion delays emergency response due to the lack of coordinate
 
 ## System Architecture
 
-![System Architecture](figures/System_Architecture.png)
+![System Architecture](figures/System_Architecture.jpg)
 
 The architecture illustrates the interaction between vehicles, RSU, and simulation layers using V2X communication.
 
