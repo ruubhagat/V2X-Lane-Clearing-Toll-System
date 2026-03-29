@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Emergency Lane Network - SUMO Road Network Definition
+  
+  RESEARCH-READY IMPLEMENTATION
+  Compatible with: SUMO 1.6.0
+  
+  Network specifications:
+  - 1500m two-lane highway
+  - Lane width: 3.2m
+  - Speed limit: 13.89 m/s (50 km/h)
+  - Lanes indexed from right: 0 (rightmost), 1 (leftmost)
+-->
+
+<net version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-10.00,1500.00,10.00" 
+              origBoundary="0.00,-10.00,1500.00,10.00" projParameter="!"/>
+
+    <!-- Main Highway Edge -->
+    <edge id="gneE9" from="gneJ0" to="gneJ1" priority="1">
+        <!-- Lane 0: Rightmost lane (emergency lane) -->
+        <lane id="gneE9_0" index="0" speed="13.89" length="1500.00" 
+              shape="0.00,-1.60 1500.00,-1.60"/>
+        
+        <!-- Lane 1: Leftmost lane (normal traffic lane) -->
+        <lane id="gneE9_1" index="1" speed="13.89" length="1500.00" 
+              shape="0.00,1.60 1500.00,1.60"/>
+    </edge>
+
+    <!-- Junction: Start point -->
+    <junction id="gneJ0" type="dead_end" x="0.00" y="0.00" 
+              incLanes="" intLanes="" shape="0.00,3.20 0.00,-3.20"/>
+    
+    <!-- Junction: End point -->
+    <junction id="gneJ1" type="dead_end" x="1500.00" y="0.00" 
+              incLanes="gneE9_0 gneE9_1" intLanes="" 
+              shape="1500.00,-3.20 1500.00,3.20"/>
+
+</net>

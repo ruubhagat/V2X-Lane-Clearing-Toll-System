@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<!--
+  Emergency Lane Traffic Scenario - SUMO Vehicle Trips
+  
+  RESEARCH-READY IMPLEMENTATION
+  Compatible with: SUMO 1.6.0
+  
+  Traffic scenario:
+  - 14 normal passenger vehicles
+  - 1 emergency vehicle (spawns at t=25s)
+  - Vehicles distributed across both lanes
+  - Staggered departure times for realistic traffic flow
+-->
+
+<routes>
+    <!-- ========== VEHICLE TYPE DEFINITIONS ========== -->
+    
+    <!-- Emergency Vehicle Type -->
+    <vType id="emergency" vClass="emergency" guiShape="emergency" 
+           color="1,0,0" maxSpeed="20" accel="3.0" decel="6.0" 
+           sigma="0" length="5.0" minGap="2.0">
+        <!-- Parameters:
+             - vClass: emergency (special vehicle class)
+             - color: Red (1,0,0)
+             - maxSpeed: 20 m/s (72 km/h)
+             - accel: 3.0 m/s² (high acceleration)
+             - decel: 6.0 m/s² (emergency braking)
+             - sigma: 0 (no driver imperfection - perfect control)
+             - length: 5.0 m
+             - minGap: 2.0 m (minimum gap to leading vehicle)
+        -->
+    </vType>
+    
+    <!-- Passenger Vehicle Type -->
+    <vType id="passenger" vClass="passenger" guiShape="passenger" 
+           color="0,0,1" maxSpeed="13.89" accel="2.0" decel="4.5" 
+           sigma="0.5" length="4.5" minGap="2.5">
+        <!-- Parameters:
+             - vClass: passenger (standard vehicle)
+             - color: Blue (0,0,1)
+             - maxSpeed: 13.89 m/s (50 km/h)
+             - accel: 2.0 m/s² (normal acceleration)
+             - decel: 4.5 m/s² (normal braking)
+             - sigma: 0.5 (realistic driver imperfection)
+             - length: 4.5 m
+             - minGap: 2.5 m
+        -->
+    </vType>
+
+    <!-- ========== ROUTE DEFINITION ========== -->
+    <route id="route_0" edges="gneE9"/>
+
+    <!-- ========== VEHICLE TRIPS ========== -->
+    <!-- CRITICAL: Vehicles MUST be sorted by departure time! -->
+    
+    <!-- Normal Traffic Flow -->
+    <vehicle id="vehicle_1" type="passenger" depart="0.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_2" type="passenger" depart="2.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <vehicle id="vehicle_3" type="passenger" depart="5.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_4" type="passenger" depart="7.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <vehicle id="vehicle_5" type="passenger" depart="10.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_6" type="passenger" depart="12.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <vehicle id="vehicle_7" type="passenger" depart="15.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_8" type="passenger" depart="17.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <vehicle id="vehicle_9" type="passenger" depart="20.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_10" type="passenger" depart="22.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <!-- EMERGENCY VEHICLE - Key Event at t=25s -->
+    <vehicle id="emergency_0" type="emergency" depart="25.00" route="route_0"
+             departLane="1" departSpeed="13" color="1,0,0"/>
+    <!-- This vehicle triggers the emergency response system -->
+    
+    <!-- Additional Traffic After Emergency -->
+    <vehicle id="vehicle_11" type="passenger" depart="30.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_12" type="passenger" depart="32.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+    
+    <vehicle id="vehicle_13" type="passenger" depart="35.00" route="route_0" 
+             departLane="0" departSpeed="10"/>
+    
+    <vehicle id="vehicle_14" type="passenger" depart="37.00" route="route_0" 
+             departLane="1" departSpeed="10"/>
+
+</routes>

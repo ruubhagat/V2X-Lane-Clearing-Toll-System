@@ -1,0 +1,5 @@
+<additional>
+    <poly id="Toll_Gantry" color="70,70,70" fill="true" layer="101" shape="460,450 510,450 510,448 460,448"/>
+    
+    <poly id="Toll_Sensors" color="0,100,255" fill="true" layer="102" shape="465,451 505,451 505,449 465,449"/>
+</additional>

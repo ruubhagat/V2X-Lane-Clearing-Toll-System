@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <copy file="realworld.net.xml"/>
+    <copy file="realworld.rou.xml"/>
+    <copy file="view.xml"/>
+    <copy file="realworld.sumo.cfg" type="config"/>
+</launch>

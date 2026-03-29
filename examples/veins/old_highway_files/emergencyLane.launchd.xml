@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!-- Veins SUMO Launch Configuration -->
+
+<launch>
+    <copy file="emergencyLane.net.xml"/>
+    <copy file="emergencyLane.trips.xml"/>
+    <copy file="emergencyLane.sumo.cfg" type="config"/>
+</launch>

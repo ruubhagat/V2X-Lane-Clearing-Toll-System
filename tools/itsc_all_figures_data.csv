@@ -1,0 +1,13 @@
+--- FIGURE 1 & 2: BASELINE COMPARISONS ---
+Metric,Siren-Only Mean,Siren-Only StdDev,V2X Mean,V2X StdDev
+Travel Time (s),85.60,0.00,85.60,0.00
+Lane Changes,5.00,0.00,1.00,0.00
+
+--- FIGURE 3, 4, & 5: V2X PERFORMANCE ---
+Metric,V2X Mean,V2X StdDev
+Toll Transactions,1267.00,0.00
+Emergency Exemptions,86.00,0.00
+Revenue ($),3167.50,0.00
+Packet Delivery Ratio (%),0.00,0.00
+Avg Speed (m/s),3.88,0.00
+Distance Traveled (m),331.87,0.00

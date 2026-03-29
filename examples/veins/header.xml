@@ -1,0 +1,10 @@
+<routes>
+    <vType id="emergency" vClass="emergency" guiShape="emergency" color="255,0,0" 
+           maxSpeed="80" 
+           lcStrategic="100" lcAssertive="100" lcSpeedGain="100" 
+           lcOpposite="1.0" 
+           jmDriveAfterRedTime="1000" latAlignment="left"/>
+    
+    <vType id="passenger" vClass="passenger" guiShape="passenger" color="0,0,255" 
+           maxSpeed="5" lcKeepRight="1.0" lcStrategic="1.0" lcCooperative="1.0" 
+           latAlignment="right"/>

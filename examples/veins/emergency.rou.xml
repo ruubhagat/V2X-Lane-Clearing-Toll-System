@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 02/11/26 22:09:18 by Eclipse SUMO duarouter Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="realworld.net.xml"/>
+        <route-files value="emergency.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="emergency.rou.xml.tmp"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="5.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="amb_0" type="emergency" depart="0.00" color="red" from="172851203" to="691146203#2"/>
+    <trip id="amb_1" type="emergency" depart="1.00" color="red" from="-48627074#2" to="-48627083#3"/>
+    <trip id="amb_2" type="emergency" depart="2.00" color="red" from="172851175#0" to="1157397989"/>
+</routes>

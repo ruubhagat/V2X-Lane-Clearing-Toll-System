@@ -1,0 +1,12 @@
+<routes>
+    <vType id="emergency" vClass="emergency" guiShape="emergency" color="255,0,0" 
+           maxSpeed="80" lcStrategic="100" lcAssertive="100" lcSpeedGain="100" 
+           jmDriveAfterRedTime="1000" latAlignment="left" width="1.8"/>
+    
+    <vType id="passenger" vClass="passenger" guiShape="passenger" color="0,0,255" 
+           maxSpeed="15" lcKeepRight="1.0" lcStrategic="1.0" lcCooperative="1.0" 
+           latAlignment="right" width="1.8"/>
+
+    <trip id="amb_1" type="emergency" depart="10.00" from="0" to="1" color="255,0,0"/>
+    <trip id="amb_2" type="emergency" depart="40.00" from="0" to="1" color="255,0,0"/>
+    <trip id="amb_3" type="emergency" depart="70.00" from="0" to="1" color="255,0,0"/>

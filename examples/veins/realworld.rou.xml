@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="ambulance_type" vClass="emergency" maxSpeed="25.0" color="red" length="5.0" accel="3.0" decel="5.0"/>
+    <vType id="car_type" vClass="passenger" maxSpeed="12.0" color="blue" length="4.5" accel="2.0" decel="4.0"/>
+    <route id="r1" edges="1352054307 691146203#0 -48627084#7 -48627084#6 -48627084#5 -48627084#4 -48627084#3"/>
+
+    <flow id="traffic" type="car_type" begin="0" end="300" vehsPerHour="600" departLane="1" route="r1"/>
+    <vehicle id="ambulance_0" type="ambulance_type" depart="20.0" departLane="1" departSpeed="max" route="r1"/>
+</routes>

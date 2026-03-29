@@ -1,0 +1,5 @@
+<additional>
+    <poi id="HOSPITAL" color="255,0,0" lane="48627082#0_0" pos="10" width="5" height="5"/>
+    
+    <poi id="START" color="0,255,0" lane="554221426#0_0" pos="5" width="5" height="5"/>
+</additional>
